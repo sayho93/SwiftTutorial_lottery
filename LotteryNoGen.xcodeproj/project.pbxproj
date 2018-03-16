@@ -13,6 +13,7 @@
 		11046689205BA595003B766E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11046688205BA595003B766E /* Assets.xcassets */; };
 		1104668C205BA595003B766E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1104668A205BA595003B766E /* LaunchScreen.storyboard */; };
 		11046697205BA595003B766E /* LotteryNoGenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11046696205BA595003B766E /* LotteryNoGenTests.swift */; };
+		110466A4205BB438003B766E /* LottoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110466A3205BB438003B766E /* LottoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		11046692205BA595003B766E /* LotteryNoGenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LotteryNoGenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11046696205BA595003B766E /* LotteryNoGenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryNoGenTests.swift; sourceTree = "<group>"; };
 		11046698205BA595003B766E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		110466A3205BB438003B766E /* LottoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				11046688205BA595003B766E /* Assets.xcassets */,
 				1104668A205BA595003B766E /* LaunchScreen.storyboard */,
 				1104668D205BA595003B766E /* Info.plist */,
+				110466A3205BB438003B766E /* LottoCell.swift */,
 			);
 			path = LotteryNoGen;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11046684205BA595003B766E /* ViewController.swift in Sources */,
+				110466A4205BB438003B766E /* LottoCell.swift in Sources */,
 				11046682205BA595003B766E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,7 +363,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.picklecode.LotteryNoGen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -374,7 +378,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.picklecode.LotteryNoGen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
