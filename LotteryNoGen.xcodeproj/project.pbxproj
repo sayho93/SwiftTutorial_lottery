@@ -14,6 +14,13 @@
 		1104668C205BA595003B766E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1104668A205BA595003B766E /* LaunchScreen.storyboard */; };
 		11046697205BA595003B766E /* LotteryNoGenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11046696205BA595003B766E /* LotteryNoGenTests.swift */; };
 		110466A4205BB438003B766E /* LottoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110466A3205BB438003B766E /* LottoCell.swift */; };
+		117C6016205F971900741CC0 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 117C600D205F971800741CC0 /* FMDatabasePool.m */; };
+		117C6017205F971900741CC0 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 117C6010205F971800741CC0 /* FMDatabase.m */; };
+		117C6018205F971900741CC0 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 117C6011205F971800741CC0 /* FMResultSet.m */; };
+		117C6019205F971900741CC0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 117C6012205F971800741CC0 /* Info.plist */; };
+		117C601A205F971900741CC0 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 117C6014205F971900741CC0 /* FMDatabaseQueue.m */; };
+		117C601B205F971900741CC0 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 117C6015205F971900741CC0 /* FMDatabaseAdditions.m */; };
+		117C601E205F97D000741CC0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 117C601D205F97D000741CC0 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +45,20 @@
 		11046696205BA595003B766E /* LotteryNoGenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryNoGenTests.swift; sourceTree = "<group>"; };
 		11046698205BA595003B766E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		110466A3205BB438003B766E /* LottoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoCell.swift; sourceTree = "<group>"; };
+		117C6009205F971700741CC0 /* LotteryNoGen-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LotteryNoGen-Bridging-Header.h"; sourceTree = "<group>"; };
+		117C600A205F971800741CC0 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		117C600B205F971800741CC0 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		117C600C205F971800741CC0 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		117C600D205F971800741CC0 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		117C600E205F971800741CC0 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		117C600F205F971800741CC0 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		117C6010205F971800741CC0 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		117C6011205F971800741CC0 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		117C6012205F971800741CC0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../../Downloads/ccgus-fmdb-fa03304/src/fmdb/Info.plist"; sourceTree = "<group>"; };
+		117C6013205F971900741CC0 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		117C6014205F971900741CC0 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		117C6015205F971900741CC0 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		117C601D205F97D000741CC0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				117C601E205F97D000741CC0 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +86,7 @@
 				11046680205BA595003B766E /* LotteryNoGen */,
 				11046695205BA595003B766E /* LotteryNoGenTests */,
 				1104667F205BA595003B766E /* Products */,
+				117C601C205F97D000741CC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +102,18 @@
 		11046680205BA595003B766E /* LotteryNoGen */ = {
 			isa = PBXGroup;
 			children = (
+				117C600E205F971800741CC0 /* FMDatabase.h */,
+				117C6010205F971800741CC0 /* FMDatabase.m */,
+				117C600F205F971800741CC0 /* FMDatabaseAdditions.h */,
+				117C6015205F971900741CC0 /* FMDatabaseAdditions.m */,
+				117C6013205F971900741CC0 /* FMDatabasePool.h */,
+				117C600D205F971800741CC0 /* FMDatabasePool.m */,
+				117C600C205F971800741CC0 /* FMDatabaseQueue.h */,
+				117C6014205F971900741CC0 /* FMDatabaseQueue.m */,
+				117C600B205F971800741CC0 /* FMDB.h */,
+				117C600A205F971800741CC0 /* FMResultSet.h */,
+				117C6011205F971800741CC0 /* FMResultSet.m */,
+				117C6012205F971800741CC0 /* Info.plist */,
 				11046681205BA595003B766E /* AppDelegate.swift */,
 				11046683205BA595003B766E /* ViewController.swift */,
 				11046685205BA595003B766E /* Main.storyboard */,
@@ -86,6 +121,7 @@
 				1104668A205BA595003B766E /* LaunchScreen.storyboard */,
 				1104668D205BA595003B766E /* Info.plist */,
 				110466A3205BB438003B766E /* LottoCell.swift */,
+				117C6009205F971700741CC0 /* LotteryNoGen-Bridging-Header.h */,
 			);
 			path = LotteryNoGen;
 			sourceTree = "<group>";
@@ -97,6 +133,14 @@
 				11046698205BA595003B766E /* Info.plist */,
 			);
 			path = LotteryNoGenTests;
+			sourceTree = "<group>";
+		};
+		117C601C205F97D000741CC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				117C601D205F97D000741CC0 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +193,7 @@
 				TargetAttributes = {
 					1104667D205BA595003B766E = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					11046691205BA595003B766E = {
@@ -182,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				117C6019205F971900741CC0 /* Info.plist in Resources */,
 				1104668C205BA595003B766E /* LaunchScreen.storyboard in Resources */,
 				11046689205BA595003B766E /* Assets.xcassets in Resources */,
 				11046687205BA595003B766E /* Main.storyboard in Resources */,
@@ -202,9 +248,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				117C6018205F971900741CC0 /* FMResultSet.m in Sources */,
 				11046684205BA595003B766E /* ViewController.swift in Sources */,
+				117C6016205F971900741CC0 /* FMDatabasePool.m in Sources */,
+				117C601A205F971900741CC0 /* FMDatabaseQueue.m in Sources */,
 				110466A4205BB438003B766E /* LottoCell.swift in Sources */,
+				117C6017205F971900741CC0 /* FMDatabase.m in Sources */,
 				11046682205BA595003B766E /* AppDelegate.swift in Sources */,
+				117C601B205F971900741CC0 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,12 +408,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8MZJHE88FH;
 				INFOPLIST_FILE = LotteryNoGen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.picklecode.LotteryNoGen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LotteryNoGen/LotteryNoGen-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -372,12 +426,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8MZJHE88FH;
 				INFOPLIST_FILE = LotteryNoGen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.picklecode.LotteryNoGen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LotteryNoGen/LotteryNoGen-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
